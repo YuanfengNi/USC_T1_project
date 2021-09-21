@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 0.8fr);
+    /* 
+    grid-auto-rows: repeat(5, 1fr);
+    border: solid 1px green;
+    width: 90%;
+    size: 90%;
+    grid-auto-columns: minmax(auto, 25%);
+    gap: 10px;
+    */
+}
+
+img {
+    width: 80%;
+}
+
+.buttons {
+    display: flex;
+    border-radius: 0px 0px 6px 6px;
+}
+  
+.buttons button {
+    outline: none;
+    background: #fff;
+    height: 40px;
+    margin: 10px;
+    border-radius: 6px;
+    border: 2px solid black;
+    flex: 1;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.buttons button:hover {
+    background: black;
+    color: white;
+}
+
+.buttons button.disabled {
+    background: grey;
+    color: lightgray;
+    border: 2px solid lightgrey;
+    cursor: not-allowed;
+}
+
+.color {
+    color: red;
+}
+
+.like-buttone {
+    /* display: absolute; */
+    height: 20px;
+    float: left;
+}
